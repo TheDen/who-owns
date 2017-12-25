@@ -87,7 +87,7 @@ function GetMapData(taburl) {
     document.getElementById("details").innerHTML = taburlvalue;
   }
   else {
-    document.getElementById("details").innerHTML = 'Currently no data for this page.<br>Please consider contributing information for this page by filling the form <a href="https://docs.google.com/forms/d/e/1FAIpQLSccu0IQW-9whheNJ8_IeQK36zMq3HkFz3rrd-VbhD6o1lJonQ/viewform?entry.1101366435=' + taburl + '&entry.1832190220" target="_blank">here</a> (takes one minute).';
+    document.getElementById("details").innerHTML = 'No data for this page.<br>Please consider contributing information for this page by filling the form <a href="https://docs.google.com/forms/d/e/1FAIpQLSccu0IQW-9whheNJ8_IeQK36zMq3HkFz3rrd-VbhD6o1lJonQ/viewform?entry.1101366435=' + taburl + '&entry.1832190220" target="_blank">here</a> (takes one minute).';
   }
 }
 
