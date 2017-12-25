@@ -1,11 +1,11 @@
 function GetMapData(taburl) {
 
-	var map = new Map();
+  var map = new Map();
 
-	map.set("nytimes", "Owned by The New York Times Company, which is publicly traded but primarily controlled by the Ochs-Sulzberger family through a dual-class share structure. Sulzberger family (13%), Carlos Slim (17%)");
-	map.set("foxnews", "Rupert Murdoch (chairman and CEO)<br>Acquired by Disney in 2017.");
-	map.set("google", "Parent Company: Alphabet Inc.");
-	map.set("wikipedia", "Wikimedia Foundation (non-profit).");
+  map.set("nytimes", "Owned by The New York Times Company, which is publicly traded but primarily controlled by the Ochs-Sulzberger family through a dual-class share structure. Sulzberger family (13%), Carlos Slim (17%)");
+  map.set("foxnews", "Rupert Murdoch (chairman and CEO)<br>Acquired by Disney in 2017.");
+  map.set("google", "Parent Company: Alphabet Inc.");
+  map.set("wikipedia", "Wikimedia Foundation (non-profit).");
   map.set("wiktionary", "Wikimedia Foundation (non-profit).");
   map.set("wikibooks", "Wikimedia Foundation (non-profit).");
   map.set("wikisource", "Wikimedia Foundation (non-profit).");
@@ -43,7 +43,7 @@ function GetMapData(taburl) {
   map.set("messenger", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)");
   map.set("whatsapp", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)"); 
   map.set("oculus", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)");
-	map.set("breitbart", "Breitbart News Network LLC<br>Steve Bannon (executive chair)");
+  map.set("breitbart", "Breitbart News Network LLC<br>Steve Bannon (executive chair)");
   map.set("nypost", "News Corp. (Murdoch)");
   map.set("theaustralian", "News Corp. (Murdoch).");
   map.set("couriermail", "News Corp. (Murdoch).");
@@ -82,17 +82,17 @@ function GetMapData(taburl) {
   map.set("ycombinator", "Y Combinator LLC ");
   map.set("linkedin", "Owned by the Microsoft Corporation");
 
-	taburlvalue = map.get(taburl)
-	if (typeof taburlvalue != 'undefined' && taburlvalue) {
-		document.getElementById("details").innerHTML = taburlvalue;
-	}
-	else {
-		document.getElementById("details").innerHTML = 'Currently no data for this page.<br>Please consider contributing information for this page by filling the form <a href="https://docs.google.com/forms/d/e/1FAIpQLSccu0IQW-9whheNJ8_IeQK36zMq3HkFz3rrd-VbhD6o1lJonQ/viewform?entry.1101366435=' + taburl + '&entry.1832190220" target="_blank">here</a> (takes one minute).';
-	}
+  taburlvalue = map.get(taburl)
+  if (typeof taburlvalue != 'undefined' && taburlvalue) {
+    document.getElementById("details").innerHTML = taburlvalue;
+  }
+  else {
+    document.getElementById("details").innerHTML = 'Currently no data for this page.<br>Please consider contributing information for this page by filling the form <a href="https://docs.google.com/forms/d/e/1FAIpQLSccu0IQW-9whheNJ8_IeQK36zMq3HkFz3rrd-VbhD6o1lJonQ/viewform?entry.1101366435=' + taburl + '&entry.1832190220" target="_blank">here</a> (takes one minute).';
+  }
 }
 
 chrome.tabs.getSelected(null, function (tab) {
-	taburl = (((new URL(tab.url)).hostname.match(/([^.]+)\.\w{2,3}(?:\.\w{2})?$/) || [])[1]);
-	document.getElementById("content").innerHTML = taburl;
-	GetMapData(taburl);
+  taburl = (((new URL(tab.url)).hostname.match(/([^.]+)\.\w{2,3}(?:\.\w{2})?$/) || [])[1]);
+  document.getElementById("content").innerHTML = taburl;
+  GetMapData(taburl);
 });
