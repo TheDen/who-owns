@@ -1,2 +1,5 @@
-# who-owns
-Chrome extension that detects which company owns the current website you're on
+# Who Owns?
+
+A Chrome extension that displays which companies own the websites you visit.
+
+Open Source. Community driven.
