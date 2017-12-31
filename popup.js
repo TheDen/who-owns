@@ -41,7 +41,7 @@ function GetMapData(taburl) {
   map.set("tbhtime", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)");
   map.set("instagram", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)");
   map.set("messenger", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)");
-  map.set("whatsapp", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)"); 
+  map.set("whatsapp", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)");
   map.set("oculus", "Facebook, Inc.<br>Mark Zuckerberg (Chairman and CEO)");
   map.set("breitbart", "Breitbart News Network LLC<br>Steve Bannon (executive chair)");
   map.set("nypost", "News Corp. (Murdoch)");
